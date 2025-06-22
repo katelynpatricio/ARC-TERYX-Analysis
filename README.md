@@ -13,8 +13,8 @@ This project analyzes sales and customer data for ARC’TERYX apparel, focusing 
 ## Getting Started  
 
 ### Prerequisites  
-- [Tableau Reader](https://www.tableau.com/products/reader) or Tableau Desktop (to view the dashboard)  
-- Optional: SQL environment if you want to explore the dataset or run included queries
+- [[Presentation Link](https://pitch.com/v/arcteryx-analysis-efmmdq)]
+- [[Tableau Dashboard](https://public.tableau.com/views/ArcteryxSalesAnalysis/CustomerDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)]
 
 ### Usage  
 1. Open the Tableau workbook to explore KPIs, trends, and category performance.  
