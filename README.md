@@ -25,7 +25,7 @@ This project analyzes sales and customer data for ARC’TERYX apparel, focusing 
 **Contents:**
 - **Project Background**: Goals and data sources  
 - **Executive Summary**: Key takeaways and metrics  
-- **Data Insights**: Visual and statistical insights from sales & customer behavior  
+- **Data Insights**: Sales and customer trends
 - **Recommendations**: Strategic suggestions for growth and retention
 
 ---
