@@ -14,13 +14,13 @@ This project analyzes sales and customer data for ARC’TERYX apparel, focusing 
 
 ## 📊 Tableau Dashboard
 
-👉 [View Tableau Dashboard](#) *(https://public.tableau.com/views/ArcteryxSalesAnalysis/CustomerDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)*
+👉 [View Tableau Dashboard](https://public.tableau.com/views/ArcteryxSalesAnalysis/CustomerDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
 ## 🖥️ PowerPoint Presentation
 
-👉 [View the Findings Presentation](#) *(https://pitch.com/v/arcteryx-analysis-efmmdq)*
+👉 [View the Findings Presentation](https://pitch.com/v/arcteryx-analysis-efmmdq)
 
 **Contents:**
 - 📌 **Project Background**: Goals and data sources  
