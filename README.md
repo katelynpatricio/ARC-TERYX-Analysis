@@ -1,4 +1,4 @@
-# 🏔️ ARC’TERYX Sales & Customer Analysis
+# ARC’TERYX Sales & Customer Analysis
 
 ## Project Overview  
 This project analyzes sales and customer data for ARC’TERYX apparel, focusing primarily on jackets and layering products. Using Python, SQL, and Tableau, it uncovers trends in sales performance, profitability, discount impacts, and customer retention. The goal is to provide actionable insights to optimize pricing strategies, improve customer loyalty, and maximize profit.
@@ -12,21 +12,21 @@ This project analyzes sales and customer data for ARC’TERYX apparel, focusing 
 
 ---
 
-## 📊 Tableau Dashboard
+## Tableau Dashboard
 
-👉 [View Tableau Dashboard](https://public.tableau.com/views/ArcteryxSalesAnalysis/CustomerDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[View Tableau Dashboard](https://public.tableau.com/views/ArcteryxSalesAnalysis/CustomerDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
-## 🖥️ PowerPoint Presentation
+## PowerPoint Presentation
 
-👉 [View the Findings Presentation](https://pitch.com/v/arcteryx-analysis-efmmdq)
+[View the Findings Presentation](https://pitch.com/v/arcteryx-analysis-efmmdq)
 
 **Contents:**
-- 📌 **Project Background**: Goals and data sources  
-- 📈 **Executive Summary**: Key takeaways and metrics  
-- 🔍 **Data Insights**: Visual and statistical insights from sales & customer behavior  
-- 💡 **Recommendations**: Strategic suggestions for growth and retention
+- **Project Background**: Goals and data sources  
+- **Executive Summary**: Key takeaways and metrics  
+- **Data Insights**: Visual and statistical insights from sales & customer behavior  
+- **Recommendations**: Strategic suggestions for growth and retention
 
 ---
 
