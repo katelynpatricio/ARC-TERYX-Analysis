@@ -16,7 +16,7 @@ This project analyzes sales and customer data for ARC’TERYX apparel, focusing 
 
 [View Tableau Dashboard](https://public.tableau.com/views/ArcteryxSalesAnalysis/CustomerDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-![Arc'teryx Dashboard]([https://github.com/katelynpatricio/ARC-TERYX-Analysis/issues/1#issue-3166600506](https://github.com/katelynpatricio/ARC-TERYX-Analysis/blob/main/Arc'teryx%20Dashboard.png?raw=true))
+![Arc'teryx Dashboard]([[https://github.com/katelynpatricio/ARC-TERYX-Analysis/issues/1#issue-3166600506](https://github.com/katelynpatricio/ARC-TERYX-Analysis/blob/main/Arc'teryx%20Dashboard.png?raw=true)](https://github.com/katelynpatricio/ARC-TERYX-Analysis/blob/main/Untitled%203.png?raw=true))
 
 ---
 
