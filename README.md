@@ -16,6 +16,12 @@ This project analyzes sales and customer data for ARC’TERYX apparel, focusing 
 
 [View Tableau Dashboard](https://public.tableau.com/views/ArcteryxSalesAnalysis/CustomerDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+**Contents**
+- **Sales Performance**: Year-over-year sales, profit, and average order value (AOV)
+- **Product & Discount Insights**: Sales and profit by category and discount tier
+- **Customer Metrics**: Customer lifetime value (CLV), repeat purchase rate (RPR), and total customers
+- **Customer Segmentation**: Top customers by value and regional retention patterns
+
 ---
 
 ## PowerPoint Presentation
