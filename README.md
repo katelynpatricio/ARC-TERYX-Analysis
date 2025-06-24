@@ -26,7 +26,7 @@ This project analyzes sales and customer data for ARC’TERYX apparel, focusing 
 
 ## PowerPoint Presentation
 
-[View the Findings Presentation](https://pitch.com/v/arcteryx-analysis-efmmdq)
+[View the Presentation](https://pitch.com/v/arcteryx-analysis-efmmdq)
 
 **Contents:**
 - **Project Background**: Goals and data sources  
