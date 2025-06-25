@@ -1,0 +1,137 @@
+-- Preview the data
+SELECT * 
+FROM arcteryxData.cleanedData
+LIMIT 10;
+
+
+-- Count number of unique orders, customers, products, and product categories
+SELECT 
+    COUNT(DISTINCT OrderID) AS TotalOrders,
+    COUNT(DISTINCT CustomerID) AS TotalCustomers,
+    COUNT(DISTINCT ProductID) AS TotalProducts,
+    COUNT(DISTINCT Category) AS TotalProductCategories
+FROM cleanedData;
+
+-- Overall sales and profit
+SELECT 
+  ROUND(SUM(FinalPrice * Quantity), 2) AS TotalSales,
+  ROUND(SUM((FinalPrice - ExpectedPrice) * Quantity), 2) AS TotalProfit
+FROM cleanedData;
+
+-- Look into sales and profit over time (Daily, Monthly, and Yearly)
+SELECT 
+    OrderDate, 
+    ROUND(SUM(FinalPrice * Quantity), 2) AS DailySales,
+    ROUND(SUM((FinalPrice - ExpectedPrice) * Quantity), 2) AS DailyProfit
+FROM cleanedData
+GROUP BY OrderDate
+ORDER BY OrderDate;
+
+SELECT 
+    strftime('%Y-%m-01', OrderDate) AS month,
+    round(SUM(FINALPRICE*QUANTITY),2) AS TotalSales,
+    ROUND(SUM((FinalPrice - ExpectedPrice) * Quantity), 2) AS TotalProfit
+FROM cleanedData
+GROUP BY month
+ORDER BY month;
+
+SELECT 
+    strftime('%Y-01-01', OrderDate) AS year,
+    round(SUM(FINALPRICE*QUANTITY),2) AS TotalSales,
+    ROUND(SUM((FinalPrice - ExpectedPrice) * Quantity), 2) AS TotalProfit
+FROM cleanedData
+GROUP BY year
+ORDER BY year;
+
+-- Look at total sales and profit by product and category
+SELECT 
+    Category,
+    ROUND(SUM(FinalPrice * Quantity), 2) AS TotalSales,
+    ROUND(SUM((FinalPrice - ExpectedPrice) * Quantity), 2) AS TotalProfit
+FROM cleanedData
+GROUP BY Category
+ORDER BY TotalSales DESC;
+
+SELECT 
+    ProductName,
+    ROUND(SUM(FinalPrice * Quantity), 2) AS TotalSales,
+    ROUND(SUM((FinalPrice - ExpectedPrice) * Quantity), 2) AS TotalProfit
+FROM cleanedData
+GROUP BY ProductName
+ORDER BY TotalSales DESC;
+
+-- Top 10 by total profit
+SELECT 
+    CustomerID, 
+    ROUND(SUM((FinalPrice - ExpectedPrice) * Quantity), 2) AS TotalProfit
+FROM cleanedData
+GROUP BY CustomerID
+ORDER BY TotalProfit DESC
+LIMIT 10;
+
+-- Determine the number of repeat customers
+SELECT 
+    COUNT(DISTINCT CustomerID) AS TotalCustomers,
+    COUNT(DISTINCT CASE WHEN OrderCount > 1 THEN CustomerID END) AS RepeatCustomers
+FROM (
+    SELECT CustomerID, COUNT(DISTINCT OrderID) AS OrderCount
+    FROM cleanedData
+    GROUP BY CustomerID
+);
+
+-- Customer activity by Region
+SELECT 
+    Region,
+    COUNT(DISTINCT CustomerID) AS TotalCustomers,
+    COUNT(DISTINCT OrderID) AS TotalOrders
+FROM cleanedData
+GROUP BY Region
+ORDER BY unique_customers DESC;
+
+-- Overall rating
+SELECT 
+    Rating,
+    COUNT(*) AS count
+FROM cleanedData
+WHERE Rating IS NOT NULL
+GROUP BY Rating
+ORDER BY Rating DESC;
+
+-- Average rating by product and category
+SELECT 
+    ProductName,
+    round(AVG(Rating),2)
+FROM cleanedData
+GROUP BY ProductName;
+
+SELECT 
+    Category,
+    round(AVG(Rating),2)
+FROM cleanedData
+GROUP BY Category;
+
+-- Sales and transactions by discount category
+SELECT 
+    CASE 
+        WHEN Discount = 0 THEN 'Full Price'
+        WHEN Discount BETWEEN 0.01 AND 0.10 THEN 'Low Discount'
+        WHEN Discount >= 0.25 THEN 'High Discount'
+        ELSE 'Other'
+    END AS DiscountCategory,
+    ROUND(SUM(FinalPrice * Quantity), 2) AS TotalSales,
+    COUNT(*) AS Transactions
+FROM cleanedData
+GROUP BY DiscountCategory;
+
+-- Calculate average order value and profit
+SELECT 
+    ROUND(AVG(OrderValue), 2) AS AvgOrderValue,
+    ROUND(AVG(OrderProfit), 2) AS AvgOrderProfit
+FROM (
+    SELECT 
+        OrderID,
+        SUM(FinalPrice * Quantity) AS OrderValue,
+        SUM((FinalPrice - ExpectedPrice) * Quantity) AS OrderProfit
+    FROM cleanedData
+    GROUP BY OrderID
+);
