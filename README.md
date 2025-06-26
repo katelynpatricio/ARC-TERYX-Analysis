@@ -1,7 +1,7 @@
 # ARC’TERYX Sales & Customer Analysis
 
 ## Project Overview  
-This project analyzes sales and customer data for ARC’TERYX apparel, focusing primarily on jackets and layering products. Using Python, SQL, and Tableau, it uncovers trends in sales performance, profitability, discount impacts, and customer retention. The goal is to provide actionable insights to optimize pricing strategies, improve customer loyalty, and maximize profit.
+This project analyzes sales and customer data for ARC’TERYX, focusing primarily on jackets, layering products, and footwear. Using Python, SQL, and Tableau, it uncovers trends in sales performance, profitability, discount impacts, and customer retention. The goal is to provide actionable insights to optimize pricing strategies, improve customer loyalty, and maximize profit.
 
 ## Features  
 - Interactive Tableau dashboard for monthly performance monitoring  
