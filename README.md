@@ -26,13 +26,13 @@ This project analyzes sales and customer data for ARC’TERYX, focusing primaril
 
 ## PowerPoint Presentation
 
-[View the Presentation](https://pitch.com/v/customer-segmentation-for-targeted-marketing-v2v97u)
+[View the Presentation](https://pitch.com/v/arcteryx-analysis-efmmdq)
 
 **Contents:**
-- **Project Background**:   
-- **Data Breakdown**:  
-- **Segmentation Results**: 
-- **Recommendations**: 
+- **Project Background**: Goals and data sources  
+- **Executive Summary**: Key takeaways and metrics  
+- **Data Insights**: Sales and customer trends
+- **Recommendations**: Strategic suggestions for growth and retention
 
 ---
 
